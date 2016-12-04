@@ -24,6 +24,10 @@ public class AppStartActivity extends AppCompatActivity {
      * user interaction before hiding the system UI.
      */
     private static final int AUTO_HIDE_DELAY_MILLIS = 3000;
+	
+	
+	
+	
 
     /**
      * Some older devices needs a small delay between UI widget updates
