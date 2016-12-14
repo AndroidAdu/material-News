@@ -20,9 +20,7 @@ public class AppStartActivity extends AppCompatActivity {
     private static final boolean AUTO_HIDE = true;
 
 
-	
-	
-	
+	//a
 	
 	
 	
