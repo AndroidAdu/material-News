@@ -1,12 +1,15 @@
 package com.dspy.material_news;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
+
+import com.dspy.material_news.test.ScrollTestActivity;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -106,7 +109,11 @@ public class AppStartActivity extends AppCompatActivity {
         mContentView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                toggle();
+//                toggle();
+
+                Intent  intent=new Intent(AppStartActivity.this,ScrollTestActivity.class);
+                startActivity(intent);
+
             }
         });
 
