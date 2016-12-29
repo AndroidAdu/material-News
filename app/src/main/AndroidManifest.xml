@@ -19,7 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".test.ScrollTestActivity"></activity>
+        <activity android:name=".test.ScrollTestActivity" />
+        <activity android:name=".test.MaterialFragmentActivity"
+            android:theme="@style/AppCompats"></activity>
     </application>
 
 </manifest>

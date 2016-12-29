@@ -22,6 +22,12 @@
 
 
     <style name="AppCompats" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <!--<item name="android:windowDrawsSystemBarBackgrounds">false</item>-->
+
+        <item name="android:windowTranslucentStatus">true</item>    <!-- 透明状态栏 -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
         <item name="colorPrimary">#FFFFFF</item>
         <item name="colorPrimaryDark">#FFFFFF</item>
         <item name="colorAccent">#FF4081</item>

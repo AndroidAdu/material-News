@@ -9,6 +9,7 @@ import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
 
+import com.dspy.material_news.test.MaterialFragmentActivity;
 import com.dspy.material_news.test.ScrollTestActivity;
 
 /**
@@ -111,7 +112,7 @@ public class AppStartActivity extends AppCompatActivity {
             public void onClick(View view) {
 //                toggle();
 
-                Intent  intent=new Intent(AppStartActivity.this,ScrollTestActivity.class);
+                Intent  intent=new Intent(AppStartActivity.this,MaterialFragmentActivity.class);
                 startActivity(intent);
 
             }
