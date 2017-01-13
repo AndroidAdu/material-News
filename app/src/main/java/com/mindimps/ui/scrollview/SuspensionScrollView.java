@@ -1,4 +1,4 @@
-package com.dspy.material_news.ui.scrollview;
+package com.mindimps.ui.scrollview;
 
 import android.content.Context;
 import android.util.AttributeSet;

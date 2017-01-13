@@ -1,4 +1,4 @@
-package com.dspy.material_news.control.fragment;
+package com.mindimps.control.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

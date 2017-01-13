@@ -1,4 +1,4 @@
-package com.dspy.material_news.test;
+package com.mindimps.test;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.dspy.material_news.R;
-import com.dspy.material_news.control.fragment.TestFragment;
+import com.mindimps.control.fragment.TestFragment;
 
 import java.util.ArrayList;
 

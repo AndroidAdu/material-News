@@ -7,7 +7,7 @@
     >
     
 
-    <com.dspy.material_news.ui.scrollview.SuspensionScrollView
+    <com.mindimps.ui.scrollview.SuspensionScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/scrollview">
@@ -41,7 +41,7 @@
 
 
         </LinearLayout>
-    </com.dspy.material_news.ui.scrollview.SuspensionScrollView>
+    </com.mindimps.ui.scrollview.SuspensionScrollView>
 
 
     <LinearLayout

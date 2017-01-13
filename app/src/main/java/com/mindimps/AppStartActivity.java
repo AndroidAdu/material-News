@@ -1,4 +1,4 @@
-package com.dspy.material_news;
+package com.mindimps;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -9,8 +9,7 @@ import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.dspy.material_news.test.MaterialFragmentActivity;
-import com.dspy.material_news.test.ScrollTestActivity;
+import com.mindimps.test.MaterialFragmentActivity;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -22,14 +21,6 @@ public class AppStartActivity extends AppCompatActivity {
      * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
      */
     private static final boolean AUTO_HIDE = true;
-
-
-	//a
-	
-	
-	
-	
-
 
     /**
      * If {@link #AUTO_HIDE} is set, the number of milliseconds to wait after
@@ -99,11 +90,11 @@ public class AppStartActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_app_start);
+        setContentView(com.dspy.material_news.R.layout.activity_app_start);
 
         mVisible = true;
-        mControlsView = findViewById(R.id.fullscreen_content_controls);
-        mContentView = findViewById(R.id.fullscreen_content);
+        mControlsView = findViewById(com.dspy.material_news.R.id.fullscreen_content_controls);
+        mContentView = findViewById(com.dspy.material_news.R.id.fullscreen_content);
 
 
         // Set up the user interaction to manually show or hide the system UI.
@@ -121,7 +112,7 @@ public class AppStartActivity extends AppCompatActivity {
         // Upon interacting with UI controls, delay any scheduled hide()
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
-        findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
+        findViewById(com.dspy.material_news.R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
     }
 
     @Override

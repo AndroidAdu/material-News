@@ -1,4 +1,4 @@
-package com.dspy.material_news.control.interfaces;
+package com.mindimps.control.interfaces;
 
 /**
  * Created by duxueyang on 16/12/21.

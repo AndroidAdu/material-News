@@ -4,7 +4,7 @@
     android:id="@+id/activity_material_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.dspy.material_news.test.MaterialFragmentActivity">
+    tools:context=".test.MaterialFragmentActivity">
 
 
     <android.support.v4.view.ViewPager

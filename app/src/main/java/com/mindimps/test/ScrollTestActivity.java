@@ -1,17 +1,12 @@
-package com.dspy.material_news.test;
+package com.mindimps.test;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.view.ViewTreeObserver;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.ScrollView;
 
 import com.dspy.material_news.R;
-import com.dspy.material_news.ui.scrollview.SuspensionScrollView;
+import com.mindimps.ui.scrollview.SuspensionScrollView;
 
 public class ScrollTestActivity extends AppCompatActivity{
 
