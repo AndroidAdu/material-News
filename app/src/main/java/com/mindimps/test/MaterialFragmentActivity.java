@@ -6,7 +6,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.dspy.material_news.R;
+import com.mindimps.R;
 import com.mindimps.control.fragment.TestFragment;
 
 import java.util.ArrayList;

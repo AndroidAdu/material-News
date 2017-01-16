@@ -8,7 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.dspy.material_news.R;
+import com.mindimps.R;
+
 
 /**
  * Created by duxueyang on 16/12/22.
