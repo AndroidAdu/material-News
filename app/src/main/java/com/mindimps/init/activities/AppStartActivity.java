@@ -1,7 +1,6 @@
-package com.mindimps;
+package com.mindimps.init.activities;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,32 +8,28 @@ import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.mindimps.test.MaterialFragmentActivity;
+import com.mindimps.R;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
  */
 public class AppStartActivity extends AppCompatActivity {
-    /**
-     * Whether or not the system UI should be auto-hidden after
-     * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
-     */
-    private static final boolean AUTO_HIDE = true;
 
-    /**
-     * If {@link #AUTO_HIDE} is set, the number of milliseconds to wait after
-     * user interaction before hiding the system UI.
-     */
+
+
+    private View mContentView;
+    private View mControlsView;
+
+    private static final boolean AUTO_HIDE = true;
     private static final int AUTO_HIDE_DELAY_MILLIS = 3000;
 
-    /**
-     * Some older devices needs a small delay between UI widget updates
-     * and a change of the status and navigation bar.
-     */
+    //兼容老设备的响应时间
     private static final int UI_ANIMATION_DELAY = 300;
+    //handler
     private final Handler mHideHandler = new Handler();
-    private View mContentView;
+
+    //rannable
     private final Runnable mHidePart2Runnable = new Runnable() {
         @SuppressLint("InlinedApi")
         @Override
@@ -52,7 +47,9 @@ public class AppStartActivity extends AppCompatActivity {
                     | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
         }
     };
-    private View mControlsView;
+
+
+
     private final Runnable mShowPart2Runnable = new Runnable() {
         @Override
         public void run() {
@@ -101,11 +98,7 @@ public class AppStartActivity extends AppCompatActivity {
         mContentView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                toggle();
-
-                Intent  intent=new Intent(AppStartActivity.this,MaterialFragmentActivity.class);
-                startActivity(intent);
-
+                toggle();
             }
         });
 
