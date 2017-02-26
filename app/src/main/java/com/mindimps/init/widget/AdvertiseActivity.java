@@ -1,4 +1,4 @@
-package com.mindimps.init.activity;
+package com.mindimps.init.widget;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,14 +6,13 @@ import android.os.Bundle;
 import com.mindimps.R;
 
 /**
- * 引导页
- *
+ * 广告页
  */
-public class GuideActivity extends AppCompatActivity {
+public class AdvertiseActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_guide);
+        setContentView(R.layout.activity_advertise);
     }
 }

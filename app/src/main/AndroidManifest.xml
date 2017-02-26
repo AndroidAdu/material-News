@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".init.activity.AppStartActivity"
+            android:name=".init.widget.AppStartActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_app_start"
             android:theme="@style/FullscreenTheme">
@@ -19,8 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".init.activity.AdvertiseActivity" />
-        <activity android:name=".init.activity.GuideActivity"></activity>
+        <activity android:name=".init.widget.AdvertiseActivity" />
+        <activity android:name=".init.widget.GuideActivity" />
+        <activity android:name=".main.widget.MainActivity"></activity>
     </application>
 
 </manifest>
