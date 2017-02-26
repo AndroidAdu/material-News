@@ -1,4 +1,4 @@
-package com.mindimps.init.activities;
+package com.mindimps.init.activity;
 
 import android.annotation.SuppressLint;
 import android.support.v7.app.ActionBar;
@@ -11,23 +11,21 @@ import android.view.View;
 import com.mindimps.R;
 
 /**
- * An example full-screen activity that shows and hides the system UI (i.e.
- * status bar and navigation/system bar) with user interaction.
+ * 项目启动页
  */
 public class AppStartActivity extends AppCompatActivity {
 
-
-
+    //两个view
     private View mContentView;
     private View mControlsView;
 
     private static final boolean AUTO_HIDE = true;
     private static final int AUTO_HIDE_DELAY_MILLIS = 3000;
-
     //兼容老设备的响应时间
     private static final int UI_ANIMATION_DELAY = 300;
     //handler
     private final Handler mHideHandler = new Handler();
+
 
     //rannable
     private final Runnable mHidePart2Runnable = new Runnable() {
@@ -35,10 +33,7 @@ public class AppStartActivity extends AppCompatActivity {
         @Override
         public void run() {
             // Delayed removal of status and navigation bar
-
-            // Note that some of these constants are new as of API 16 (Jelly Bean)
-            // and API 19 (KitKat). It is safe to use them, as they are inlined
-            // at compile-time and do nothing on earlier devices.
+            // android 4.1-andorid 4.4 的新特性  不会对老版本设备产生什么影响
             mContentView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LOW_PROFILE
                     | View.SYSTEM_UI_FLAG_FULLSCREEN
                     | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
@@ -47,8 +42,6 @@ public class AppStartActivity extends AppCompatActivity {
                     | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
         }
     };
-
-
 
     private final Runnable mShowPart2Runnable = new Runnable() {
         @Override
@@ -61,6 +54,8 @@ public class AppStartActivity extends AppCompatActivity {
             mControlsView.setVisibility(View.VISIBLE);
         }
     };
+
+
     private boolean mVisible;
     private final Runnable mHideRunnable = new Runnable() {
         @Override
@@ -86,14 +81,10 @@ public class AppStartActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_app_start);
-
         mVisible = true;
         mControlsView = findViewById(R.id.fullscreen_content_controls);
         mContentView = findViewById(R.id.fullscreen_content);
-
-
         // Set up the user interaction to manually show or hide the system UI.
         mContentView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -101,7 +92,6 @@ public class AppStartActivity extends AppCompatActivity {
                 toggle();
             }
         });
-
         // Upon interacting with UI controls, delay any scheduled hide()
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
@@ -111,7 +101,6 @@ public class AppStartActivity extends AppCompatActivity {
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
-
         // Trigger the initial hide() shortly after the activity has been
         // created, to briefly hint to the user that UI controls
         // are available.
