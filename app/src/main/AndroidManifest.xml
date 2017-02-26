@@ -8,10 +8,6 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".test.ScrollTestActivity" />
-        <activity
-            android:name=".test.MaterialFragmentActivity"
-            android:theme="@style/AppCompats" />
         <activity
             android:name=".init.activity.AppStartActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
