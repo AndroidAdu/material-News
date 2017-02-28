@@ -1,4 +1,4 @@
-package com.mindimps.init.ui;
+package com.mindimps.module.init.ui;
 
 import android.annotation.SuppressLint;
 import android.support.v7.app.ActionBar;

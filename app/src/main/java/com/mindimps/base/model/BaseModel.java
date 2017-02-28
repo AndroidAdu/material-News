@@ -3,10 +3,10 @@ package com.mindimps.base.model;
 
 /**
  * bonday服务器返回的基础格式
- *
+ * T 泛型的用法 正在进行中
  * @author duxue
  */
-public class BaseModel {
+public class BaseModel<T> {
 
     private boolean ack;        //与服务器是否交互
     private String label;        //
@@ -17,6 +17,8 @@ public class BaseModel {
     private int totalItems;        //返回数据个数
     private String uri;
     private String message;    //附带信息
+
+    private T data;             //返回的数据
 
 
     public boolean isAck() {
@@ -89,5 +91,13 @@ public class BaseModel {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public T getData() {
+        return data;
+    }
+
+    public void setData(T data) {
+        this.data = data;
     }
 }

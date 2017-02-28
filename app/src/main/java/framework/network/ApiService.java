@@ -1,6 +1,8 @@
 package framework.network;
 
-
+import com.app.annotation.apt.ApiFactory;
+import com.mindimps.base.model.BaseModel;
+import com.mindimps.module.init.model.ADEntity;
 
 import okhttp3.RequestBody;
 import retrofit2.http.Body;
@@ -18,12 +20,12 @@ import rx.Observable;
  * Retrofit 定义的网络请求
  * Retrofit 与RXJava  的相互实现
  */
+@ApiFactory
 public interface ApiService {
-    /**
-     * 公共广告图片
-     */
-//    @GET("api/ADs/newest")
-//    Observable<>  getADImageUrl();
+
+    //公共广告图片
+    @GET("api/ADs/newest")
+    Observable<BaseModel<ADEntity>>  getADImageUrl();
 
     /**
      * 开课模块
@@ -36,8 +38,6 @@ public interface ApiService {
     // 开课分类
 //    @GET("api/video_lessons/video_lesson_type/tag")
 //    Observable<>  getSubjectCategory();
-
-
 
 
 

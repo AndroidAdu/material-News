@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_advertise"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.mindimps.init.ui.AdvertiseActivity">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
-</RelativeLayout>
+    <FrameLayout
+        android:id="@+id/activity_advertise"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.mindimps.module.init.ui.AdvertiseActivity">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/advertise_Image"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/advertise_countdowntext"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="31dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:text="5s"
+            android:background="@mipmap/activity_advertise_oval"/>
+
+    </FrameLayout>
+</layout>
+

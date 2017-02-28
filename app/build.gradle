@@ -56,7 +56,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'org.aspectj:aspectjrt:1.8.9'
     compile project(':lib')
-    // 设置注解处理器  应对注解 完成非常好的内容
+    // 设置注解处理器
     annotationProcessor project(':apt')
 }
 
