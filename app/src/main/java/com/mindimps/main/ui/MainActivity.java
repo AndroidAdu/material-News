@@ -1,4 +1,4 @@
-package com.mindimps.main.widget;
+package com.mindimps.main.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,6 +7,7 @@ import com.mindimps.R;
 
 /**
  *  MainActivity
+ *
  *
  */
 public class MainActivity extends AppCompatActivity {

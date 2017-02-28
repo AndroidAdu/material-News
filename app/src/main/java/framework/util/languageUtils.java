@@ -5,8 +5,7 @@ import android.content.Context;
 import java.util.Locale;
 
 /**
- * Created by 雪阳 on 2016/11/2.
- * 当前系统语言
+ * 系统语言工具类
  */
 public class languageUtils {
     /**

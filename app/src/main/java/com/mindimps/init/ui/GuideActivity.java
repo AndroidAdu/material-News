@@ -1,4 +1,4 @@
-package com.mindimps.init.widget;
+package com.mindimps.init.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

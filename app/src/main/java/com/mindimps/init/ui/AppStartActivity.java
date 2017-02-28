@@ -1,4 +1,4 @@
-package com.mindimps.init.widget;
+package com.mindimps.init.ui;
 
 import android.annotation.SuppressLint;
 import android.support.v7.app.ActionBar;
@@ -8,11 +8,17 @@ import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
 
+import com.app.annotation.apt.Router;
 import com.mindimps.R;
+
+import framework.constant.Constants;
 
 /**
  * 项目启动页
+ *
  */
+
+@Router(Constants.INIT)
 public class AppStartActivity extends AppCompatActivity {
 
     //两个view

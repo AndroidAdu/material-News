@@ -1,5 +1,11 @@
+import com.app.plugin.AspectjPlugin
+import com.app.plugin.JavassistPlugin
+
 apply plugin: 'com.android.application'
 apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'realm-android'
+apply plugin: AspectjPlugin
+apply plugin: JavassistPlugin
 
 android {
     compileSdkVersion 24
@@ -23,17 +29,19 @@ android {
         sourceCompatibility 1.8
         targetCompatibility 1.8
     }
+
+    //支持dataBinding
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-
     // Rxjava+RxAndroid
     //gson 来解析retrofit2 返回的数据
     ////用于返回Rxjava调用
     // 监控 okhttp 的日志输入
-
-
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support:cardview-v7:24.2.1'
     compile 'com.android.support:design:24.2.1'
@@ -46,6 +54,10 @@ dependencies {
     compile 'com.squareup.okhttp3:logging-interceptor:3.1.2'
     compile 'com.android.support:support-v4:24.2.1'
     testCompile 'junit:junit:4.12'
+    compile 'org.aspectj:aspectjrt:1.8.9'
+    compile project(':lib')
+    // 设置注解处理器  应对注解 完成非常好的内容
+    annotationProcessor project(':apt')
 }
 
 

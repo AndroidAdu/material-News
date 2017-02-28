@@ -6,7 +6,7 @@ package framework.util;
  * @author wader
  * 
  */
-public class DisplayUtil {
+public class DisplayUtils {
 	/**
 	 * 将px值转换为dip或dp值，保证尺寸大小不变
 	 * 
