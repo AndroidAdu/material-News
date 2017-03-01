@@ -1,6 +1,7 @@
 package com.mindimps.module.init.ui;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -96,6 +97,8 @@ public class AppStartActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 toggle();
+                Intent intent=new Intent(AppStartActivity.this,AdvertiseActivity.class);
+                startActivity(intent);
             }
         });
         // Upon interacting with UI controls, delay any scheduled hide()

@@ -55,12 +55,18 @@ public class Api {
     //构造方法
     private Api() {
         //日志
-        HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
+        HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor(new HttpLoggingInterceptor.Logger() {
+            @Override
+            public void log(String message) {
+                //打印retrofit日志
+                Log.i("RetrofitLog","retrofitBack = "+message);
+            }
+        });
         interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         //文件缓存目录
-        File cacheFile = new File(App.getAppContext().getCacheDir(), "cache");
-        //设定缓存目录  okhttp里面的缓存
-        Cache cache = new Cache(cacheFile, 1024 * 1024 * 100); //100Mb
+//        File cacheFile = new File(App.getAppContext().getCacheDir(), "cache");
+//        //设定缓存目录  okhttp里面的缓存
+//        Cache cache = new Cache(cacheFile, 1024 * 1024 * 100); //100Mb
         //okhttp 的默认设置
         OkHttpClient okHttpClient = new OkHttpClient.Builder()
                 .readTimeout(7676, TimeUnit.MILLISECONDS)
@@ -70,9 +76,9 @@ public class Api {
                 //设置日志拦截器
                 .addInterceptor(interceptor)
                 //设置网络拦截器 （暂时用不到重定向或者实体设置）
-                .addNetworkInterceptor(new HttpCacheInterceptor())
+//                .addNetworkInterceptor(new HttpCacheInterceptor())
                 //设置缓存
-                .cache(cache)
+//                .cache(cache)
                 .build();
         //设置时间日期
         Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ssZ").serializeNulls().create();

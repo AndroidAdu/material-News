@@ -17,7 +17,10 @@ public interface ADContract {
      */
     interface View extends BaseView {
 
-        //显示广告
+        /**
+         * 显示广告
+         * @param adEntity
+         */
         void showADImage(ADEntity adEntity);
     }
 
@@ -27,7 +30,9 @@ public interface ADContract {
      */
     abstract class Presenter extends BasePresenter<View> {
 
-        //获取广告数据
+        /**
+         * 获取广告数据
+         */
         public abstract void getADEntity();
 
     }
