@@ -70,7 +70,7 @@ public class Api {
                 //设置日志拦截器
                 .addInterceptor(interceptor)
                 //设置网络拦截器 （暂时用不到重定向或者实体设置）
-//                .addNetworkInterceptor(new HttpCacheInterceptor())
+                .addNetworkInterceptor(new HttpCacheInterceptor())
                 //设置缓存
                 .cache(cache)
                 .build();

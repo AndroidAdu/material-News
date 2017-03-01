@@ -12,6 +12,9 @@ import android.widget.LinearLayout;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
+/**
+ * 状态栏工具类
+ */
 public class StatusBarUtils {
 
 	public static void translucentBar(int color,Activity activity) {

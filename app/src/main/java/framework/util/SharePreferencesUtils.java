@@ -5,7 +5,7 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
 /**
- * SharePreference封装
+ * SharePreference工具类
  */
 public class SharePreferencesUtils {
 	//定义表名

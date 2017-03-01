@@ -10,7 +10,7 @@ import android.view.Window;
 import android.view.WindowManager;
 
 /**
- * 获得屏幕相关的辅助类
+ * 获得屏幕相关的工具类
  * 
  * @author zhy
  * 
